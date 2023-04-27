@@ -10,7 +10,7 @@ class Options:
 		self.executor = forgotten.ForgottenYoutube()
 
 	def build_arg_parser(self):
-		epilog = "python3 main.py -u 'PLl9ZdhTSovhwFfkrRD3sL52sN67j8FBwu' -a 'AfsE41Cxfoze641FojkfbFIKlk5218S8-jp852DSs' -u -r -f 'RU'"
+		epilog = "python3 main.py -i 'PLl9ZdhTSovhwFfkrRD3sL52sN67j8FBwu' -a 'AfsE41Cxfoze641FojkfbFIKlk5218S8-jp852DSs' -u -r -f 'RU'"
 		self.parser = argparse.ArgumentParser(description="Made by KrowZ", epilog=epilog, argument_default=argparse.SUPPRESS)
 
 		#If -f then must also have -r

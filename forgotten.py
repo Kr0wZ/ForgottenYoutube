@@ -102,7 +102,7 @@ class ForgottenYoutube():
                         self.unavailable_videos_id.append(video['snippet']['resourceId']['videoId'])
                     elif(video['snippet']['title'] == 'Private video'):
                     
-                        self.count_deleted_videos += 1
+                        self.count_private_videos += 1
                         self.unavailable_videos_id.append(video['snippet']['resourceId']['videoId'])
                 if(self.restricted_videos):
                     if(video.get('contentDetails')):
